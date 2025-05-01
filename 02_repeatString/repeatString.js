@@ -4,7 +4,7 @@ const repeatString = function (receivedString, numberOfRepeats) {
     if (numberOfRepeats < 0) {
         return 'ERROR';
     }
-    for (i = 0; i < numberOfRepeats; i++) {
+    for (let i = 0; i < numberOfRepeats; i++) {
         repeatedString = repeatedString + receivedString;
     }
     return repeatedString;
