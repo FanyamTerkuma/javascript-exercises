@@ -1,20 +1,20 @@
-const removeFromArray = function (array, ...itemsToRemove) {
-    let newArray = [];
+const removeFromArray = function (inputArray, ...itemsToRemove) {
+    let filteredArray = [];
     if (itemsToRemove.length > 1) {
-        for (const item of array) {
+        for (const item of inputArray) {
             if (!itemsToRemove.includes(item)) {
-                newArray.push(item);
+                filteredArray.push(item);
             }
         }
     } else {
-        for (const item of array) {
+        for (const item of inputArray) {
             if (item !== itemsToRemove[0]) {
-                newArray.push(item);
+                filteredArray.push(item);
             }
         }
     }
 
-    return newArray;
+    return filteredArray;
 };
 
 // Do not edit below this line
